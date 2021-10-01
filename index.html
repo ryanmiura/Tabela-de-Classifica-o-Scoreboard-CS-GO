@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Classificação CS:GO</title>
+    <link href="./style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Scoreboard Counter Strike Global Offensive</h1>
+
+    <div class="forms">
+        <label>Escolha o jogador:</label>
+        <select id="selectPlayerInfo"></select>
+
+        <label>Escolha a estatistica:</label>
+        <select id="selectStatInfo">
+            <option value="s_kills">Kills</option>
+            <option value="s_assists">Assistances</option>
+            <option value="s_deaths">Deaths</option>
+            <option value="s_plants">C4 Plants</option>
+            <option value="s_defuses">Defuses</option>
+            <option value="s_ckills">Chicken Kills</option>
+        </select>
+
+        <button class="bgreen" type="submit" onclick="MaisUm()">+1</button>
+        <button class="bred" type="submit" onclick="MenosUm()">-1</button>
+        <button class="bblack" type="submit" onclick="Zerar()">ZERAR ESTATISTICAS</button><br><hr>
+
+        <label>Adicionar Jogador</label>
+        <input id="adicionarJogador" placeholder="Nome do jogador">
+        <button class="bgreen" type="submit" onclick="Adicionar()">Adicionar</button>
+
+        <label>Remover Jogador</label>
+        <select id="selectPlayerRemove"></select>
+        <button class="bred" type="submit" onclick="Remover()">Remover</button><hr>
+    </div>
+
+    <div class="scoreboard">
+        <table>
+        <thead>
+            <tr>
+                <th>Player</th>
+                <th>Kills</th>
+                <th>Assistances</th>
+                <th>Deaths</th>
+                <th>C4 Plants</th>
+                <th>Defuses</th>
+                <th>Chicken kills</th>
+                <th>K/D</th>
+                <th>Diff</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody class="scoreBoard">
+
+        </tbody>
+            
+
+        </table>
+    </div>
+
+    <a href="https://github.com/ryanmiura" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/1322/1322053.png" alt="" class="github-logo">
+      </a>
+    <script src="./script.js"></script>
+</body>
+
+</html>
